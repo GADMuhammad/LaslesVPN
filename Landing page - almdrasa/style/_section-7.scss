@@ -1,0 +1,88 @@
+.subscription-section {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+
+  &__div {
+    background-color: var(--section-color);
+    border: solid 1px var(--while-color);
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: calc(var(--default-padding) * 3) calc(var(--default-padding) * 2);
+    width: 1140px;
+    border-radius: 10px;
+    box-shadow: 0px 25px 18px 0px rgba(13, 16, 37, 0.1);
+    align-items: center;
+    border: 1px solid #eee;
+
+    @media (max-width: 700px) {
+      width: 60rem;
+      flex-direction: column;
+      padding: calc(var(--default-padding) * 3) calc(var(--default-padding) * 1);
+      gap: 3.6rem;
+    }
+
+    @media (max-width: 500px) {
+      width: 45rem;
+    }
+
+    @media (max-width: 370px) {
+      width: 40rem;
+    }
+  }
+
+  &__info {
+    display: flex;
+    gap: 1.6rem;
+    flex-direction: column;
+    width: 400px;
+    text-align: start;
+    padding-right: 3rem;
+
+    @media (max-width: 700px) {
+      text-align: center;
+    }
+
+    @media (max-width: 500px) {
+      width: 50rem;
+      padding: 0 calc(var(--default-padding) * 2);
+    }
+  }
+
+  &__heading {
+    font-weight: var(--font-weight-medium);
+    font-size: var(--font-size-two);
+    line-height: var(--line-height-two);
+    color: var(--high-light-black-color);
+
+    @media (max-width: 500px) {
+      font-size: var(--font-size-there);
+    }
+  }
+
+  &__button {
+    padding: 2.4rem 6.4rem;
+    border-radius: 10px;
+    background-color: var(--red-color);
+    color: var(--while-color);
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-five);
+    line-height: 25px;
+    letter-spacing: 0.5px;
+    border: solid var(--red-color) 2px;
+    box-shadow: rgba(245, 56, 56, 0.35) 1rem 2.4rem 4.8rem;
+    align-self: center;
+    transition: all var(--timing-animation);
+    text-align: center;
+
+    &:hover,
+    &:active {
+      transform: scale(1.05);
+      letter-spacing: 1.5px;
+      background-color: #f64c4c;
+      border: solid #f64c4c 2px;
+    }
+  }
+}

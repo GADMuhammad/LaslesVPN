@@ -1,0 +1,205 @@
+:root {
+  // Colors
+  --red-color: #f53838;
+  --very-red-color: #c42d44;
+  --high-light-black-color: #0b132a;
+  --non-high-light-black-color: #4f5665;
+  --icon-color: #f53838;
+  --icon-circle-color: #ffecec;
+  --frame-grey-color: #ddd;
+  --start-color: #fea250;
+  --while-color: #fff;
+  --small-circle-color: #dde0e4;
+  --green-color-icon: #2fab73;
+  --line-color: #eeeff2;
+  --shadow-color: #0d1025;
+  --section-color: #fbfbfb;
+  --last-section-color: #f6f6f6;
+
+  // Width:
+  --desktop-width: 1440px;
+  --tablet-width: 600px;
+
+  //
+  --circular-button-radius: 5rem;
+  --non-circular-button-radius: 1rem;
+  --timing-animation: 0.5s;
+  --default-padding: 2rem;
+
+  // FONT sizes:
+  --font-size-one: 5.2rem;
+  --font-size-two: 3.5rem;
+  --font-size-there: 2.5rem;
+  --font-size-four: 1.8rem;
+  --font-size-five: 1.6rem;
+  --font-size-six: 1.4rem;
+
+  // FONT weights:
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+
+  // FONT families:
+  --font-family-general: "Rubik", sans-serif;
+
+  // Line heights:
+  --line-height-one: 7rem;
+  --line-height-two: 5rem;
+  --line-height-there: 4.5rem;
+  --line-height-four: 3rem;
+  --line-height-five: 1.9rem;
+}
+
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  display: inline-block;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 4rem;
+
+  @media (max-width: 1060px) {
+    font-size: 52%;
+  }
+
+  @media (max-width: 500px) {
+    font-size: 45%;
+  }
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: var(--font-family-general);
+  line-height: 1.3;
+  overflow-x: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+//
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: var(--desktop-width);
+  margin: 0 auto;
+  padding: 0 3rem;
+}
+
+// main:
+.main {
+  padding: 0 4rem;
+  display: flex;
+  flex-direction: column;
+}
+
+section:nth-child(1),
+section:nth-child(2),
+section:nth-child(3) {
+  margin-bottom: calc(var(--default-padding) * 4);
+}
+
+.secondary-heading {
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-two);
+  line-height: var(--line-height-two);
+  color: var(--high-light-black-color);
+}
+
+.introduction__content--paragraph {
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-five);
+  color: var(--non-high-light-black-color);
+  line-height: var(--line-height-four);
+
+  &-span {
+    font-weight: var(--font-weight-medium);
+  }
+}
+
+.third-heading {
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-six);
+  line-height: var(--font-size-four);
+  color: var(--non-high-light-black-color);
+}
+
+.forth-heading {
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-four);
+  color: var(--high-light-black-color);
+  line-height: var(--line-height-four);
+}
+
+.six-heading {
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-six);
+  color: var(--non-high-light-black-color);
+  line-height: var(--line-height-four);
+}
+
+.section--with-bg {
+  position: relative;
+}
+.section--with--gray-bg {
+  position: relative;
+}
+
+.section--with-bg::before,
+.section--with--gray-bg::before,
+.section--with--very--gray-bg::before {
+  content: "";
+  position: absolute;
+  width: 100vw;
+  justify-self: center;
+  z-index: -1;
+  height: 100%;
+}
+
+.section--with-bg::before {
+  background-color: var(--section-color);
+}
+
+.section--with--gray-bg::before {
+  background-image: linear-gradient(
+    to bottom,
+    var(--section-color) 50%,
+    var(--last-section-color) 50%
+  );
+}
+
+.section--with--very--gray-bg::before {
+  background-color: var(--last-section-color);
+}
