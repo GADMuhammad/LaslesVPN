@@ -1,0 +1,141 @@
+.plans-section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  padding: 6.4rem 0;
+  gap: 0.8rem;
+  align-items: center;
+  justify-content: center;
+
+  &__paragraph {
+    text-align: center;
+  }
+  &__div-gift {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+
+  &__gift {
+    max-width: 144.9px;
+    height: 165.37px;
+  }
+
+  &__boxes {
+    display: flex;
+    gap: 3.2rem;
+    flex-wrap: wrap;
+    margin-top: 4rem;
+    justify-content: center;
+  }
+
+  &__box:nth-of-type(1),
+  &__box:nth-of-type(2) {
+    border: var(--frame-grey-color) solid 2px;
+  }
+
+  &__box:nth-of-type(3) {
+    border: var(--red-color) solid 2px;
+  }
+
+  &__box {
+    max-width: 32rem;
+    display: flex;
+    flex-direction: column;
+    padding: 6.4rem;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+
+    &:nth-of-type(1) .plans-section__selectButton,
+    &:nth-of-type(2) .plans-section__selectButton {
+      color: var(--red-color);
+      border: solid var(--red-color) 2px;
+
+      &:hover,
+      :active {
+        background-color: #feebeb;
+        color: var(--very-red-color);
+        border: solid var(--very-red-color) 2px;
+      }
+    }
+
+    &:nth-of-type(3) .plans-section__selectButton {
+      background-color: var(--red-color);
+      color: var(--while-color);
+      border: solid var(--red-color) 2px;
+
+      &:hover,
+      &:active {
+        background-color: #dd3232;
+        border: solid #dd3232 2px;
+      }
+    }
+
+    & .plans-section__selectButton {
+      transition: all var(--timing-animation);
+      font-weight: var(--font-weight-medium);
+      padding: 1rem 4rem;
+      border-radius: 50px;
+      max-width: 177.88px;
+      align-self: center;
+      letter-spacing: 1px;
+      text-transform: capitalize;
+
+      &:hover,
+      &:active {
+        transform: scale(1.06);
+        letter-spacing: 1.25px;
+      }
+    }
+
+    &--info {
+      display: flex;
+      flex-direction: column;
+      gap: 2.4rem;
+    }
+
+    &--heading {
+      text-align: center;
+    }
+
+    &--icon {
+      color: var(--green-color-icon);
+      --ionicon-stroke-width: 60px;
+    }
+
+    &--ul {
+      display: flex;
+      gap: 2rem;
+      flex-direction: column;
+      margin: 4rem 0 2rem 0;
+      align-self: flex-start;
+      height: 230px;
+    }
+
+    &--li {
+      display: flex;
+      gap: 2rem;
+      cursor: default;
+    }
+  }
+
+  &__priceAndSign {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    &--price {
+      text-align: center;
+      font-weight: var(--font-weight-medium);
+      font-size: var(--font-size-there);
+      line-height: var(--line-height-four);
+      color: var(--high-light-black-color);
+
+      & span {
+        font-weight: var(--font-weight-regular);
+      }
+    }
+  }
+}
