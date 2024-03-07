@@ -28,11 +28,11 @@ The design for this landing page was provided via Figma, ensuring a visually app
 
 ## Getting Started
 
-To get started with LaslesVPN, simply visit our [website](https://www.laslesvpn.com) to learn more and sign up for our services.
+To get started with LaslesVPN, simply visit our [website](https://gadmuhammad.github.io/LaslesVPN/) to learn more and sign up for our services.
 
 ## Preview
 
-![LaslesVPN Landing Page Preview](https://gadmuhammad.github.io/LaslesVPN/)
+![LaslesVPN Landing Page Preview](./preview.png)
 
 ## How to Contribute
 
