@@ -38,12 +38,4 @@ To get started with LaslesVPN, simply visit our [website](https://gadmuhammad.gi
 
 If you'd like to contribute to the development of LaslesVPN Landing Page, feel free to fork this repository, make your changes, and submit a pull request.
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
-
 ---
-
-You can add the actual preview image (`preview.png`) by placing an image of your landing page within your repository and linking to it accordingly.
-
-Feel free to adjust the content as needed to better fit your project. Let me know if you need further assistance!
