@@ -32,7 +32,7 @@ To get started with LaslesVPN, simply visit our [website](https://www.laslesvpn.
 
 ## Preview
 
-![LaslesVPN Landing Page Preview](./preview.png)
+![LaslesVPN Landing Page Preview](https://gadmuhammad.github.io/LaslesVPN/)
 
 ## How to Contribute
 
