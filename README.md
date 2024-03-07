@@ -1,7 +1,3 @@
-Great! Based on the information you provided, here's a template for your README file:
-
----
-
 # LaslesVPN Landing Page
 
 Welcome to LaslesVPN Landing Page repository! This landing page is designed to provide a network solution for all your needs with ease and fun. Discover interesting features from LaslesVPN that will make your online experience smooth and secure.
